@@ -277,15 +277,9 @@ public class Login extends AppCompatActivity {
 
                 relativeLayout.setLayoutParams(params);
                 relativeLayout2.setLayoutParams(params2);
-                if (emails=="admin"&&password=="123456") {
-                    Intent intent = new Intent(Login.this, Detail.class);
-                    startActivity(intent);
-                    finish();
-                }else{
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+                Intent intent = new Intent(Login.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
             });
     }
