@@ -98,4 +98,7 @@
     <color name="blank_color">#ff999999</color>
     <color name="text_net_err_refetch">#ff999999</color>
     <color name="shape_line">#ffcccccc</color>
+    <color name="colortext">#e1e5ee</color>
+    <color name="colordevider">#cfc391</color>
+    <color name="signintext">#cfc391</color>
 </resources>
