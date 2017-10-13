@@ -50,7 +50,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
                 int position=holder.getAdapterPosition();
                 Fruit fruit=mFruitList.get(position);
                 Intent intent=new Intent(mContext,Detail.class);//mContext的内容传进去
-                intent.putExtra(Detail.FRUIT_NAME,fruit.getName());
+                intent.putExtra(Detail.FRUIT_NAME,fruit.getName());//前一项是传出的数据到哪一活动哪一字符串常量 后一项是传入的数据是fruit类的哪一个属性
                 intent.putExtra(Detail.FRUIT_TIME,fruit.getTime());
                 intent.putExtra(Detail.FRUIT_PLACE,fruit.getPlace());
                 intent.putExtra(Detail.FRUIT_NUMBER,fruit.getNumber());
@@ -64,9 +64,6 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
     public void onBindViewHolder(ViewHolder holder, int position) {
         Fruit fruit=mFruitList.get(position);//获得当前项的fruit类
         holder.fruitName.setText("活动名称"+fruit.getName());//得到具体的数据
-        holder.fruitTime.setText("活动时间"+fruit.getTime());
-        holder.fruitPlace.setText("活动地点"+fruit.getPlace());
-        holder.fruitNumber.setText("活动人数"+fruit.getNumber());
     }
 
     @Override

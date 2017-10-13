@@ -106,7 +106,7 @@ public class HomeFragment extends Fragment {
         //滚动控件/卡片布局逻辑
         initFruits();//初始化个数的函数声明
         RecyclerView recyclerView=(RecyclerView)view.findViewById(R.id.recycler_view);
-        GridLayoutManager layoutManager=new GridLayoutManager(getActivity(),2);//网格布局 有两列
+        GridLayoutManager layoutManager=new GridLayoutManager(getActivity(),1);//网格布局 有两列
         recyclerView.setLayoutManager(layoutManager);//网格布局
         adapter=new FruitAdapter(fruitList);
         recyclerView.setAdapter(adapter);//适配器实例与recyclerView控件关联

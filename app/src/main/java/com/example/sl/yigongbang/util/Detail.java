@@ -35,8 +35,13 @@ public class Detail extends AppCompatActivity {
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);//Toolbar实例化
         CollapsingToolbarLayout collapsingToolbarLayout=(CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar);//Toolbar加强实例化
         TextView detail_name=(TextView)findViewById(R.id.detail_name);
+        TextView detail_time=(TextView)findViewById(R.id.detail_time);
+        TextView detail_place=(TextView)findViewById(R.id.detail_place);
+        TextView detail_number=(TextView)findViewById(R.id.detail_number);
         detail_name.setText("活动名称:"+fruitName);//这里应该由数据库实现记录和字段的调用 我这里是初始化的示例 此处应该有服务器的数据解析后数据库调用
-
+        detail_time.setText("活动时间:"+fruitTime);
+        detail_place.setText("活动地点:"+fruitPlace);
+        detail_number.setText("活动人数:"+fruitNumber);
         setSupportActionBar(toolbar);//用Toolbar替换Actionbar
         ActionBar actionBar=getSupportActionBar();//actionBar的实例 因为有返回控件
         if(actionBar!=null){
